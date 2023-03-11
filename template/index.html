@@ -4,13 +4,114 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MAYANAGARI</title>
-        <link rel="stylesheet" type="text/css" href="../template/style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../template/style.css"> -->
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-        
+        <style>
+          body{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.lines{
+    font-family: "Trirong", serif;
+    justify-content: center;
+    text-align: center;
+    margin-top: -300px;
+    font-size: 21px;
+}
+
+.title{
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+    /* color: #5f5656; */
+    color: black;
+}
+
+.para{
+    font-family: "Trirong", serif;
+    font-size: 25px;
+    margin-top: 175px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.signin{
+	float: right;
+	list-style-type: none;
+	font-size: 20px;
+    margin-top: -825px;
+    margin-right: 35px;
+    font-family: "Trirong",serif;
+}
+
+.signin a{
+	text-decoration: none;
+	color:#000000;
+	padding: 2px 8px;
+	transition: 0.4s ease;
+	border-radius: 18px;
+}
+.signin a:hover{
+	background-color: rgb(29, 28, 28);
+	color: white;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9d0;
+    min-width: 150px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    padding: 2px 7px;
+}
+  .signin:hover .dropdown-content {
+    display: block;
+    flex-direction: column;
+}
+
+ 
+#image{
+    width: 100%;
+    height: 600px;
+    margin-top: -485px;
+    background:url(/bgimg_mumbai.jpg);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+
+}
+.taskbar ul{
+    float: left;
+	list-style-type: none;
+    font-family: "Trirong", serif;
+    margin-top: -825px;
+    margin-left: -25px;
+}
+.taskbar ul li{
+    display:inline-block;    
+}
+.taskbar ul li a{
+	text-decoration: none;
+	color: black;
+    padding: 5px 10px 5px 10px; 
+	font-size: 20px;
+	border-radius: 18px;
+	transition: 0.6s ease;
+}
+.taskbar ul li a:hover{
+	background-color: rgb(29, 28, 28);
+	color: white;
+}
+
+  
+        </style>
     </head>
     <body>
         <section class="title">
@@ -25,7 +126,7 @@
             <p>From iconic landmarks like Gateway of India and Marine Drive, to popular sights like Sea Link and Haji Ali, there is so much about Mumbai that lures people to this part of India. Not to forget, the scrumptious Maharashtrian delicacies and the unique spirit of Mumbai that makes people fall in love with the city in no time.</p>
         </section>
         <div class="signin">
-            <a href="#!"><b>SIGN IN</b></a>
+            <a><b>SIGN IN</b></a>
         
             <div class="dropdown-content">
                 <a href="http://localhost:8000/signup/">As a Tourist</a>
