@@ -20,5 +20,5 @@ def loginaction(request):
         if t==():
             return render(request,'error.html')     
         else:
-            return render(request,'welcome.html')
+            return render(request,'welcomet.html')
     return render(request,"login_t.html")
