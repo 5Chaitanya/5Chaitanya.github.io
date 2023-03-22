@@ -243,25 +243,26 @@ section {
         </div>
         
         <div class="contact-form">
-          <form action="" id="contact-form">
+          <form action="" method="POST" id="contact-form">
+            {% csrf_token %}
             <h2>Send Message</h2>
             <div class="input-box">
-              <input type="text" required="true" placeholder="Full Name" name="">
-              <!-- <span>Full Name</span> -->
+              <input type="text" required="true" placeholder="Full Name" name="name">
+              
             </div>
             
             <div class="input-box">
-              <input type="email" required="true" placeholder="Email" name="">
-              <!-- <span>Email</span> -->
+              <input type="email" required="true" placeholder="Email" name="email">
+              
             </div>
             
             <div class="input-box">
-              <textarea required="true" placeholder="Enter your message" name=""></textarea>
-              <!-- <span>Type your Message...</span> -->
+              <textarea required="true" placeholder="Enter your message" name="message"></textarea>
+              
             </div>
             
             <div class="input-box">
-              <input type="submit" value="Send" name="">
+              <input type="submit" value="Send">
             </div>
           </form>
         </div>
