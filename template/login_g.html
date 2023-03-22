@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <style>
+    /* Styles for the login form */
+    form {
+      font-family: 'Shadows Into Light', cursive;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin-top: 150px;
+      margin-left: 470px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    label{
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    input{
+      font-size : 20px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #171917;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    input[type="submit"]:hover {
+      background-color: #010101;
+    }
+  </style>
+</head>
+<body>
+  {% if error %}
+    <p>{{error}}</p>
+  {% endif %}
+  <form action="" method="post">
+    {% csrf_token %}
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required >
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>
